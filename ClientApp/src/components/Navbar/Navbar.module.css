@@ -1,0 +1,22 @@
+.Navbar{
+    /* width: 1520px; */
+   
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    height: 40px;
+}
+.list{
+    display: flex;
+    align-items: center;
+}
+.list li{
+    cursor: pointer;
+}
+.list li+li{
+    margin-left: 64px;
+}
