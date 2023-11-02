@@ -1,10 +1,10 @@
 import './App.css';
-import FullPage from './pages/FullPage/FullPage';
-
+import Router from './router/router';
+import { RouterProvider } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <FullPage />
+      <RouterProvider router={Router} />
     </div>
   );
 }
