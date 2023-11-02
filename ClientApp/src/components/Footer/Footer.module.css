@@ -1,5 +1,8 @@
 .footer{
     padding: 120px 120px 0 120px;
+    background-image: url('../../assets/bgFooter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .footer_contain{
     text-align: center;

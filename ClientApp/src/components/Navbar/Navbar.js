@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './Navbar.module.css'
 import logo from '../../assets/logo.png'
 import Button from '../UI/Button'
+import { Link, NavLink } from 'react-router-dom'
 export default function Navbar() {
     return (
         <div className={classes.Navbar}>
@@ -9,16 +10,24 @@ export default function Navbar() {
                 <img src={logo} />
                 <ul className={classes.list}>
                     <li>
-                        About
+                        <NavLink to='/'>
+                            About
+                        </NavLink>
                     </li>
                     <li>
-                        Work
+                        <NavLink to='/casestudy'>
+                            Work
+                        </NavLink>
                     </li>
                     <li>
-                        Sevices
+                        <Link to='#sevices'>
+                            Sevices
+                        </Link>
                     </li>
                     <li>
-                        Jobs
+                        <Link to='#jobs'>
+                            Jobs
+                        </Link>
                     </li>
                 </ul>
                 <Button>

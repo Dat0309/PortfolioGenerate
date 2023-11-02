@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './Footer.module.css'
 import logo from '../../assets/logo.png'
+import { Link, NavLink } from 'react-router-dom'
 export default function Footer() {
     return (
         <div className={classes.footer}>
@@ -11,16 +12,24 @@ export default function Footer() {
                 </p>
                 <ul>
                     <li>
-                        About
+                        <NavLink to='/'>
+                            About
+                        </NavLink>
                     </li>
                     <li>
-                        Work
+                        <NavLink to='/casestudy'>
+                            Work
+                        </NavLink>
                     </li>
                     <li>
-                        Sevices
+                        <Link to='#sevices'>
+                            Sevices
+                        </Link>
                     </li>
                     <li>
-                        Jobs
+                        <Link to='#jobs'>
+                            Jobs
+                        </Link>
                     </li>
                 </ul>
             </div>
